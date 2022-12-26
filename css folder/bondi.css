@@ -1,0 +1,262 @@
+:root {
+    --main-color: white;
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+    color: var(--main-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--yellow-color);
+}
+
+/* Start Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    padding: 0.5rem 3rem;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--main-color);
+    padding-left: 25px;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+    padding: 10px;
+}
+
+.navbar .navbar-toggler {
+    color: var(--main-color);
+    font-size: 25px;
+    border-color: white;
+    position: absolute;
+    right: 30px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* End Navbar */
+
+/* start landing */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 106.08px);
+
+}
+
+/* End Landing */
+
+/* start features */
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    background-color: var(--green-color);
+    width: 120px;
+    height: 2px;
+    transform: translate(-57px, 14px);
+}
+
+.features .icon-holder {
+    height: 200px;
+    z-index: -1;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
+
+.features .icon {
+    bottom: 5%;
+}
+
+/* End Features */
+
+/* start our work */
+
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work .active {
+    color: var(--main-color);
+    background-color: var(--green-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+}
+
+.our-work li:not(.active):hover {
+    color: var(--yellow-color);
+}
+
+.our-work .row .col {
+    flex-basis: unset !important;
+}
+
+.our-work .box {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.our-work .box .overlay {
+    background-color: rgba(216, 159, 159, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.our-work .box .overlay p {
+    color: var(--main-color);
+    position: absolute;
+    transform: translate(58px, 85px);
+}
+
+.our-work .box:hover .overlay {
+    transform: translateX(calc(-100% - 5%));
+    transition: 1.5s;
+    transition-timing-function: linear;
+}
+
+/* End our work */
+
+/* start stuff */
+.stuff {
+    overflow-x: hidden;
+}
+
+.stuff .row {
+    position: relative;
+    left: 2%;
+    margin-top: 10%;
+    padding: 30px;
+}
+
+/* end stuff */
+
+/* start our team */
+
+.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team h3 {
+    color: var(--yellow-color);
+}
+
+.our-team .col h4 {
+    color: var(--main-color);
+    padding: 10px;
+}
+
+/* end our team */
+
+/* start project */
+
+.start-project {
+    background-color: var(--dark-color);
+}
+
+/* end project */
+
+/* start subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border-color: transparent;
+    border-bottom-color: white;
+}
+
+.subscribe input::placeholder {
+    color: white;
+}
+
+.subscribe input[type="button"] {
+    background-color: var(--dark-color);
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 1;
+    }
+}
+
+/* end subscribe */
+
+/* start footer */
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--main-color);
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer .icon svg {
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    padding: 7px;
+}
+
+.footer .copyRight {
+    background-color: #0e1827;
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 20px;
+}
+
+.footer .copyRight span {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* end footer */
